@@ -29,7 +29,7 @@ const bootstrapClasses = [
   'invisible',
 
   'sr-only',
-  { srOnlyFocusable : 'sr-only sr-only-focusable' },
+  { srOnlyFocusable: 'sr-only sr-only-focusable' },
 
   'text-hide',
 
@@ -68,10 +68,10 @@ const bootstrapClasses = [
 ];
 
 const camelCaseRe = /-([a-z])/g;
-const convertClass = (stringOrObj) =>
-  stringOrObj instanceof Object
+const convertClass = stringOrObj =>
+  (stringOrObj instanceof Object
     ? stringOrObj
-    : { [stringOrObj.replace(camelCaseRe, (g) => g[1].toUpperCase())] : stringOrObj };
+    : { [stringOrObj.replace(camelCaseRe, g => g[1].toUpperCase())]: stringOrObj });
 
 export {
   bootstrapClasses,
