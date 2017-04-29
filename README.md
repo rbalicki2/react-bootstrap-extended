@@ -102,7 +102,7 @@ If you want to add these back, a future release will give you that ability!
 ## TODO
 
 * Nested components are not handled yet.
-* Expose an easy way of adding addition classes for classes you custom-defined.
+* Expose an easy way of adding props for classes you custom-defined.
 
 ## Contributing
 
