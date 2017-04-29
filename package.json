@@ -1,0 +1,39 @@
+{
+  "name": "react-bootstrap-extended",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0",
+      "react"
+    ]
+  },
+  "version": "0.0.1",
+  "main": "dist/react-bootstrap-extended.js",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-class-props": "^0.0.2",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3",
+    "webpack": "^2.3.3"
+  },
+  "scripts": {
+    "test": "echo You pass... for now",
+    "lint": "eslint './**/*.js'",
+    "build": "npm run lint && npm run test && npm run compile",
+    "compile": "webpack"
+  }
+}
