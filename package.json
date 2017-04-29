@@ -7,6 +7,10 @@
       "react"
     ]
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rbalicki2/react-bootstrap-extended"
+  },
   "version": "0.0.2",
   "main": "dist/react-bootstrap-extended.js",
   "dependencies": {
