@@ -909,6 +909,12 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bootstrap-class-props@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/bootstrap-class-props/-/bootstrap-class-props-0.0.2.tgz#b2366023d035030e8f97e77db89f1a4a8052aa6d"
+  dependencies:
+    react-class-props "^0.0.2"
+
 brace-expansion@^1.0.0:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.7.tgz#3effc3c50e000531fb720eaff80f0ae8ef23cf59"
