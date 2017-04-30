@@ -1,15 +1,27 @@
-const path = require('path');
-const pkg = require('./package.json');
+import path from 'path';
+import fs from 'fs';
+
+import pkg from './package.json';
+
+const allOtherFiles = fs.readdirSync('./src')
+  .filter(fileName => fileName !== 'index.js')
+  .reduce((accum, fileName) => ({
+    ...accum,
+    [`lib/${fileName}`]: `./src/${fileName}`,
+  }), {});
 
 module.exports = {
-  entry: './src/index',
+  entry: {
+    'dist/react-bootstrap-extended.js': './src/index.js',
+    ...allOtherFiles,
+  },
   resolve: {
     modules: ['node_modules', __dirname],
     extensions: ['.js', '.jsx'],
   },
   output: {
-    filename: 'react-bootstrap-extended.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: '[name]',
+    path: path.resolve(__dirname),
     library: 'react-class-props',
     libraryTarget: 'umd',
   },

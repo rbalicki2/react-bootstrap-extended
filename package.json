@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/rbalicki2/react-bootstrap-extended"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/react-bootstrap-extended.js",
   "dependencies": {
     "bootstrap-class-props": "^0.0.2",
@@ -37,7 +37,8 @@
   "scripts": {
     "test": "echo You pass... for now",
     "lint": "eslint './**/*.js'",
-    "build": "npm run lint && npm run test && npm run compile",
+    "build": "npm run clean && npm run lint && npm run test && npm run compile",
+    "clean": "rm -rf ./dist",
     "compile": "webpack"
   }
 }
