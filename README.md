@@ -99,12 +99,17 @@ I omitted classes like `lead`, `blockquote-reverse`, etc. because they are too c
 
 If you want to add these back, a future release will give you that ability!
 
+## The existing `pullRight` and `pullLeft` props don't work on `DropdownButton`, `SplitButton`, `Dropdown` and `Nav`!
+
+There are a few components that use the same props (`pullRight` and `pullLeft`). This is a known bug, and a fix is planned for an upcoming release.
+
+Note that for some components, such as for `Badge`s, the overloaded `pullRight` prop has the same effect.
+
 ## TODO
 
-* Nested components are not handled yet.
-* Expose an easy way of adding props for classes you custom-defined.
+* Expose an easy way of adding props for classes you custom-defined
 * Tests
-* Typescript bindings?
+* Typescript bindings
 
 ## Contributing
 

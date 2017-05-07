@@ -3,11 +3,10 @@ import fs from 'fs';
 
 import pkg from './package.json';
 
-const allOtherFiles = fs.readdirSync('./src')
-  .filter(fileName => fileName !== 'index.js')
+const allOtherFiles = fs.readdirSync('./src/components')
   .reduce((accum, fileName) => ({
     ...accum,
-    [`lib/${fileName}`]: `./src/${fileName}`,
+    [`lib/${fileName}`]: `./src/components/${fileName}`,
   }), {});
 
 module.exports = {

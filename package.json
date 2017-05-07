@@ -14,7 +14,7 @@
   "version": "0.0.3",
   "main": "dist/react-bootstrap-extended.js",
   "dependencies": {
-    "bootstrap-class-props": "^0.0.2",
+    "bootstrap-class-props": "file:/Users/robertbalicki/Documents/code/bootstrap-class-props/",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4"

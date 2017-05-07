@@ -909,11 +909,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap-class-props@^0.0.2:
+"bootstrap-class-props@file:/Users/robertbalicki/Documents/code/bootstrap-class-props/":
   version "0.0.2"
-  resolved "https://registry.yarnpkg.com/bootstrap-class-props/-/bootstrap-class-props-0.0.2.tgz#b2366023d035030e8f97e77db89f1a4a8052aa6d"
   dependencies:
-    react-class-props "^0.0.2"
+    react-class-props "file:/Users/robertbalicki/Documents/code/react-class-props/"
 
 brace-expansion@^1.0.0:
   version "1.1.7"
@@ -2753,9 +2752,8 @@ react-bootstrap@^0.31.0:
     uncontrollable "^4.1.0"
     warning "^3.0.0"
 
-react-class-props@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/react-class-props/-/react-class-props-0.0.2.tgz#b71e324e33b899ba67a74f005c20a48eb61a39f0"
+"react-class-props@file:/Users/robertbalicki/Documents/code/react-class-props/":
+  version "0.0.3"
   dependencies:
     react "^15.5.4"
 
