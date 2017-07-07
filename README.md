@@ -8,7 +8,11 @@
 import { Panel } from 'react-bootstrap-extended';
 
 // in your render() method
-return (<Panel textUppercase textDanger>My panel is uppercase and red</Panel>);
+return (<Panel textUppercase textDanger>
+  This panel has the
+  <pre>text-uppercase</pre> and <pre>text-danger</pre>
+  classes applied to it.
+</Panel>);
 ```
 
 ## Motivation
@@ -19,14 +23,14 @@ At their best, React components expose simple, clean and statically-typed interf
 
 In React Bootstrap (which is the best set of web building blocks, bar none), I often find myself adding Bootstrap utility classes to existing components, e.g.
 
-`<Button className="pull-right"></Button>`
+`<Button className="pull-right">Click Me!</Button>`
 
 Some disadvantages to this method include:
 
-1. It is more difficult to statically analyze and quickly examine. For example, `pul-right` may sneak through code review.
+1. It is more difficult to statically analyze and quickly examine. For example, `pul-right` may sneak through code review. In particular, Flow and Typescript are of no help here.
 2. It is difficult to distinguish one-off classes (e.g. `className="my-login-button"`) from global classes. This prevents code reuse: another developer will not know that they can re-use the `pull-right` class and instead, will write that CSS themselves.
 
-This package brings that static typing to bootstrap utility classes.
+This package brings that static typing to bootstrap utility classes in a fully flow-compatible way.
 
 ## API
 
@@ -97,8 +101,6 @@ I omitted classes like `show`, `hidden`, `caret` and `close` because they are wa
 
 I omitted classes like `lead`, `blockquote-reverse`, etc. because they are too component-specific.
 
-If you want to add these back, a future release will give you that ability!
-
 ## The existing `pullRight` and `pullLeft` props don't work on `DropdownButton`, `SplitButton`, `Dropdown` and `Nav`!
 
 There are a few components that use the same props (`pullRight` and `pullLeft`). This is a known bug, and a fix is planned for an upcoming release.
@@ -109,7 +111,7 @@ Note that for some components, such as for `Badge`s, the overloaded `pullRight` 
 
 * Expose an easy way of adding props for classes you custom-defined
 * Tests
-* Typescript bindings
+* Flow bindings
 
 ## Contributing
 
