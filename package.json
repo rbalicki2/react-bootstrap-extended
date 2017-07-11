@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/rbalicki2/react-bootstrap-extended"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/react-bootstrap-extended.js",
   "dependencies": {
     "bootstrap-class-props": "^0.0.3",
