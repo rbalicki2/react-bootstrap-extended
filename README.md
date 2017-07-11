@@ -110,7 +110,7 @@ Note that for some components, such as for `Badge`s, the overloaded `pullRight` 
 ## TODO
 
 * Expose an easy way of adding props for classes you custom-defined
-* Tests
+* Add more tests
 * Flow bindings
 
 ## Contributing
