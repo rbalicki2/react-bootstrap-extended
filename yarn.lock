@@ -977,10 +977,11 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-"bootstrap-class-props@file:/Users/robertbalicki/Documents/code/bootstrap-class-props/":
+bootstrap-class-props@^0.0.3:
   version "0.0.3"
+  resolved "https://registry.yarnpkg.com/bootstrap-class-props/-/bootstrap-class-props-0.0.3.tgz#43bc405a38621dd544216b02a018a1650d4aaa32"
   dependencies:
-    react-class-props "git://github.com/rbalicki2/react-class-props.git#use-the-prop-types-package"
+    react-class-props "^0.0.4"
 
 brace-expansion@^1.0.0:
   version "1.1.7"
@@ -3527,11 +3528,10 @@ react-bootstrap@^0.31.0:
     uncontrollable "^4.1.0"
     warning "^3.0.0"
 
-"react-class-props@git://github.com/rbalicki2/react-class-props.git#use-the-prop-types-package":
+react-class-props@^0.0.4:
   version "0.0.4"
-  resolved "git://github.com/rbalicki2/react-class-props.git#49747e91fbe94bf6d5e1d831ca46b20a810dad8d"
+  resolved "https://registry.yarnpkg.com/react-class-props/-/react-class-props-0.0.4.tgz#03aafc0a3bc25730150acf5825bd76c26299d98e"
   dependencies:
-    prop-types "^15.5.10"
     react "^15.5.4"
 
 react-dom@^15.5.4:
