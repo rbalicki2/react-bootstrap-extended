@@ -980,7 +980,7 @@ boom@2.x.x:
 "bootstrap-class-props@file:/Users/robertbalicki/Documents/code/bootstrap-class-props/":
   version "0.0.3"
   dependencies:
-    react-class-props "^0.0.4"
+    react-class-props "git://github.com/rbalicki2/react-class-props.git#use-the-prop-types-package"
 
 brace-expansion@^1.0.0:
   version "1.1.7"
@@ -1722,6 +1722,10 @@ eslint-plugin-import@^2.2.0:
     lodash.cond "^4.3.0"
     minimatch "^3.0.3"
     pkg-up "^1.0.0"
+
+eslint-plugin-jasmine@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-jasmine/-/eslint-plugin-jasmine-2.7.1.tgz#bfa10f54653aec9bde96b8d7aae3bdd9474312db"
 
 eslint-plugin-jsx-a11y@^4.0.0:
   version "4.0.0"
@@ -3523,10 +3527,11 @@ react-bootstrap@^0.31.0:
     uncontrollable "^4.1.0"
     warning "^3.0.0"
 
-react-class-props@^0.0.4:
+"react-class-props@git://github.com/rbalicki2/react-class-props.git#use-the-prop-types-package":
   version "0.0.4"
-  resolved "https://registry.yarnpkg.com/react-class-props/-/react-class-props-0.0.4.tgz#03aafc0a3bc25730150acf5825bd76c26299d98e"
+  resolved "git://github.com/rbalicki2/react-class-props.git#49747e91fbe94bf6d5e1d831ca46b20a810dad8d"
   dependencies:
+    prop-types "^15.5.10"
     react "^15.5.4"
 
 react-dom@^15.5.4:

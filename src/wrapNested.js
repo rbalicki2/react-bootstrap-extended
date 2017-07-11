@@ -2,9 +2,10 @@ import wrapBootstrapClasses from 'bootstrap-class-props';
 import { Component as ReactComponent } from 'react';
 
 const wrapNested = (Component) => {
-  Object.keys(Component).forEach(key => {
+  Object.keys(Component).forEach((key) => {
     const val = Component[key];
     if (Object.getPrototypeOf(val) === ReactComponent) {
+      /* eslint-disable no-param-reassign */
       Component[key] = wrapNested(val);
     }
   });

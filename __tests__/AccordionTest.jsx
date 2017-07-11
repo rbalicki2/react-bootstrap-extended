@@ -1,11 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Accordion as Accordion } from '../src';
 import RbsAccordion from 'react-bootstrap/lib/Accordion';
+
+import { Accordion } from '../src';
 
 describe('Accordion', () => {
   it('should render a react-bootstrap Accordion', () => {
     const accordion = shallow(<Accordion />);
+
     expect(accordion.find(RbsAccordion)).toHaveLength(1);
   });
 
