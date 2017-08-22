@@ -16,7 +16,7 @@
   "dependencies": {
     "bootstrap-class-props": "^0.0.3",
     "react": "^15.5.4",
-    "react-bootstrap": "^0.31.0",
+    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
@@ -46,6 +46,8 @@
     "compile": "webpack"
   },
   "jest": {
-    "testPathIgnorePatterns": [".eslintrc.js"]
+    "testPathIgnorePatterns": [
+      ".eslintrc.js"
+    ]
   }
 }
