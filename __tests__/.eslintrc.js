@@ -6,5 +6,8 @@ module.exports = {
   "plugins": [
     "jasmine"
   ],
-  "extends" : "plugin:jasmine/recommended"
+  "extends" : "plugin:jasmine/recommended",
+  "rules": {
+    "jasmine/new-line-before-expect": 0
+  }
 };

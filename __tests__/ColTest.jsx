@@ -42,7 +42,6 @@ describe('Col', () => {
     expect(fullRenderCol.find('.col-xs-12')).toHaveLength(1);
     expect(shallowRenderCol.hasClass('custom-class')).toBe(true);
     expect(shallowRenderCol.hasClass('pull-right')).toBe(true);
-
     expect(fullRenderCol.html()).toEqual(renderedHtml);
     expect(shallowRenderCol.html()).toEqual(renderedHtml);
   });
