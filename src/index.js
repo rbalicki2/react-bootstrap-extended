@@ -65,5 +65,7 @@ export Table from './components/Table';
 export TabPane from './components/TabPane';
 export Tabs from './components/Tabs';
 export Thumbnail from './components/Thumbnail';
+export ToggleButton from './components/ToggleButton';
+export ToggleButtonGroup from './components/ToggleButtonGroup';
 export Tooltip from './components/Tooltip';
 export Well from './components/Well';
